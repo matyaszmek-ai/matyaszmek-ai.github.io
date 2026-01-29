@@ -1,6 +1,10 @@
 body {
-    color: aqua;
+    color: red;
     background-color: #000000;
     background-image: url(img/Momo.webp);
-    background-size: 5%;
+    background-size: cover;
+}
+
+h1 {
+    font: underline bold 42px 'Times New Roman', serif;
 }
