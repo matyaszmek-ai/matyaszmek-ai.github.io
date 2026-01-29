@@ -1,3 +1,5 @@
 body{
-    color:aqua
+    color:aqua;
+    background-color:rgb(0, 0, 0);
+    background-image: url(img/Momo.webp);
 }
