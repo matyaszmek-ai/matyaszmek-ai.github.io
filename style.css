@@ -1,10 +1,31 @@
 body {
-    color: red;
-    background-color: #000000;
-    background-image: url(img/Momo.webp);
-    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease; /* Plynulá změna barvy */
 }
 
-h1 {
-    font: underline bold 120px 'Times New Roman', serif;
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
 }
