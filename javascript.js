@@ -14,19 +14,19 @@ function generujNahodnouBarvu() {
 
 // 3. Akce po kliknutí
 tlacitko.addEventListener('click', () => {
+    const canvas = document.getElementById("mojePlatno");
+    const ctx = canvas.getContext("2d");
     const novaBarva = generujNahodnouBarvu();
     
-    teloStranky.style.backgroundColor = novaBarva;
+    ctx.fillStyle = novaBarva;
     textBarvy.innerText = "Aktuální barva: " + novaBarva;
+
+    // Nastavení barvy výplně
+    ctx.fillStyle = novaBarva;
+
+    // fillRect(poziceX, poziceY, šířka, výška)
+    // Pro čtverec musí být šířka a výška stejná
+    ctx.fillRect(50, 50, 100, 100);
 });
 
 
-const canvas = document.getElementById("mojePlatno");
-const ctx = canvas.getContext("2d");
-
-// Nastavení barvy výplně
-ctx.fillStyle = novaBarva;
-
-// fillRect(poziceX, poziceY, šířka, výška)
-// Pro čtverec musí být šířka a výška stejná
-ctx.fillRect(50, 50, 100, 100);
