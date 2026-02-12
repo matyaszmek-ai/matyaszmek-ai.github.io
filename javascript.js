@@ -27,7 +27,7 @@ tlacitko.addEventListener('click', () => {
     // fillRect(poziceX, poziceY, šířka, výška)
     // Pro čtverec musí být šířka a výška stejná
     bob.fillRect(50, 50, 100, 100);
-    bob1.fillRect(20, 20, 100, 100);
+    bob1.fillRect(80, 80, 100, 100);
 });
 
 
