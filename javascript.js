@@ -21,8 +21,6 @@ tlacitko.addEventListener('click', () => {
     ctx.fillStyle = novaBarva;
     textBarvy.innerText = "Aktuální barva: " + novaBarva;
 
-    // Nastavení barvy výplně
-    ctx.fillStyle = novaBarva;
 
     // fillRect(poziceX, poziceY, šířka, výška)
     // Pro čtverec musí být šířka a výška stejná
