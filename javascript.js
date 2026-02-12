@@ -19,3 +19,14 @@ tlacitko.addEventListener('click', () => {
     teloStranky.style.backgroundColor = novaBarva;
     textBarvy.innerText = "Aktuální barva: " + novaBarva;
 });
+
+
+const canvas = document.getElementById("mojePlatno");
+const ctx = canvas.getContext("2d");
+
+// Nastavení barvy výplně
+ctx.fillStyle = novaBarva;
+
+// fillRect(poziceX, poziceY, šířka, výška)
+// Pro čtverec musí být šířka a výška stejná
+ctx.fillRect(50, 50, 100, 100);
