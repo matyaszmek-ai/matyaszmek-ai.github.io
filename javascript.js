@@ -11,6 +11,11 @@ function generujNahodnouBarvu() {
     const index = Math.floor(Math.random() * barvy.length);
     return barvy[index];
 }
+function generujNahodnouBarvu1() {
+    const barvy = ['#FF5733', '#33FF57', '#3357FF'];
+    const index = Math.floor(Math.random() * barvy.length);
+    return barvy[index];
+}
 
 // 3. Akce po kliknutí
 tlacitko.addEventListener('click', () => {
@@ -18,9 +23,10 @@ tlacitko.addEventListener('click', () => {
     const bob = canvas.getContext("2d");
     const bob1 = canvas.getContext("2d");
     const novaBarva = generujNahodnouBarvu();
+    const novaBarva1 = generujNahodnouBarvu();
     
     bob.fillStyle = novaBarva;
-    bob1.fillStyle = novaBarva;
+    bob1.fillStyle = novaBarva1;
     textBarvy.innerText = "Aktuální barva: " + novaBarva;
 
 
